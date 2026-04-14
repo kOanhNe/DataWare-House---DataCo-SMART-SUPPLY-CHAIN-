@@ -3,17 +3,6 @@
 
 CSV → **Bronze Layer** → Silver Layer → Gold Layer → SSAS → BI/Reporting
 
-### Trạng thái hiện tại
-
-| Layer   | Trạng thái          | Người thực hiện | Ghi chú |
-|---------|---------------------|------------------|--------|
-| Bronze  | **Hoàn thành**      | Member 1        | Dữ liệu đã load đầy đủ |
-| Silver  | Chưa thực hiện      | Member 2        | Sẽ bắt đầu từ Bronze |
-| Gold    | Chưa thực hiện      | Member 3        | Sẽ bắt đầu từ Silver |
-| BI      | Chưa thực hiện      | Member 4        | Sẽ bắt đầu từ Gold |
-
----
-
 ## Cấu trúc Repository
 
 ```plaintext
@@ -24,7 +13,7 @@ DataWarehouseProject/
 │   ├── Gold.dtsx            # Member 3 sẽ chỉnh sửa
 │   └── Main.dtsx            # Master Package (chạy toàn bộ pipeline)
 ├── README.md
-
+```
 ## Bronze Layer
 Thực hiện toàn bộ phần **Ingestion** dữ liệu từ file CSV vào Bronze Layer theo các bước sau:
 
