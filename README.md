@@ -1,4 +1,3 @@
-```markdown
 # Data Warehouse Project – DataCo Smart Supply Chain
 ## Kiến trúc Hệ thống
 
