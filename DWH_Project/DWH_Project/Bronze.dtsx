@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{68918D22-5982-4B63-98DD-FF314551B057}">
+  DTS:VersionBuild="57"
+  DTS:VersionGUID="{4660D67E-85FC-4EB1-A17B-63AB4ABED1F4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\category.csv">
+          DTS:ConnectionString="C:\DataCo\category.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="category_id"
-              DTS:DTSID="{92F5EA0F-4C9D-4ED5-9F20-EBCC963F46C0}"
+              DTS:DTSID="{5822C732-3F72-4A4D-88BE-12B82FAB1220}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="category_name"
-              DTS:DTSID="{886020DA-BD36-4A59-8FE4-A963DF7DCDD4}"
+              DTS:DTSID="{D3BABADF-C5D4-4643-AF59-13497779761F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -64,11 +64,10 @@
           DTS:Format="Delimited"
           DTS:LocaleID="1033"
           DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\cus.csv">
+          DTS:ConnectionString="C:\DataCo\customer.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,8 +75,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_id"
-              DTS:DTSID="{187A7A68-200B-40E6-8025-F8B64829040E}"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{32DB2175-18E0-4213-84CD-819D6CA057B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,8 +84,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_fname"
-              DTS:DTSID="{8EFB29FF-A7E5-483C-827A-4BD2602770AF}"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{C681140C-C67B-412C-AA4A-9F6C3DC8F8F2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,8 +93,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_lname"
-              DTS:DTSID="{0EB6998F-130A-4B21-BB76-EBC3CD5F4735}"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{A7832F09-2BA6-4DD7-97C5-3E15A6B7419D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,8 +102,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_email"
-              DTS:DTSID="{3FA13204-9581-4AE0-9FBD-05F7EF8FDE26}"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{49393A8C-2C33-4B44-9FCF-22C3CB2E8B5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,8 +111,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_segment"
-              DTS:DTSID="{754FADE5-ABC1-4B9F-A2D8-392931143F6C}"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{BAB26780-491E-4878-9F1E-E620A0AE6DE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,8 +120,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_city"
-              DTS:DTSID="{BFD4F940-1D51-4BED-B280-3EA802529E26}"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{2F7A98E5-E749-4DCE-992B-A38320F4B0C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,8 +129,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_state"
-              DTS:DTSID="{56F44C29-E023-4D49-B2E5-64E126163D1B}"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{E59C4E07-F747-4F0D-B2C8-CE57CC61D777}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,8 +138,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_country"
-              DTS:DTSID="{E0B95835-6EA8-4093-BC2D-6E4E2CFE6F6D}"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{CE1CB63B-65DA-4366-8C9F-108B2AA306E4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,8 +147,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_street"
-              DTS:DTSID="{057CFEB0-DDD7-4BF1-B8E1-66B65CAB2D4F}"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{CA5A2B75-1A58-4A04-ADBB-3A43B7B91BFD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,8 +156,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="customer_zipcode"
-              DTS:DTSID="{FC4C8000-845C-4461-A6A0-A9CAC9429832}"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{C3B9E978-5FD9-476B-9D8E-5B835E49BFD6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -178,7 +177,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\department.csv">
+          DTS:ConnectionString="C:\DataCo\department.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -187,7 +186,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="department_id"
-              DTS:DTSID="{A79EF712-1CF9-4A0F-9AB1-34E8CC69AC0A}"
+              DTS:DTSID="{1217A795-5842-4372-83CA-D42A19061E29}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -196,7 +195,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="department_name"
-              DTS:DTSID="{5C54CDA1-274C-471A-9193-8170EE64C1BB}"
+              DTS:DTSID="{E51BE3EB-7304-482F-B8BD-117FDE4EB109}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -216,7 +215,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\orders.csv">
+          DTS:ConnectionString="C:\DataCo\orders.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -225,7 +224,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_id"
-              DTS:DTSID="{171A1242-F440-4706-A4A2-B328C9804C77}"
+              DTS:DTSID="{BAA6CC05-5F43-4D18-8A04-B49E7228EB35}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -234,7 +233,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_date_dateorders"
-              DTS:DTSID="{A834F14C-B963-45EC-AC10-5B5B70DDAB0D}"
+              DTS:DTSID="{B1765E73-8E0B-42D7-8AAE-D8DBF8FF8A37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -243,7 +242,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_customer_id"
-              DTS:DTSID="{540492F1-BED5-47A5-8EF0-2D3F42BC6D52}"
+              DTS:DTSID="{AD60C06B-2EBD-48D8-B3E6-18D9DF07BF66}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -252,7 +251,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_status"
-              DTS:DTSID="{1DBB2DDB-6368-40C7-9C4A-FA16B23734DC}"
+              DTS:DTSID="{7B543FCC-EEE1-45E5-8D06-478DA8CA398F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -261,7 +260,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_city"
-              DTS:DTSID="{5D6242BD-3360-49D8-9414-ACB341ECA5BD}"
+              DTS:DTSID="{2BDD0B58-CB9D-4110-8A31-14F5C96C5EBA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -270,7 +269,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_state"
-              DTS:DTSID="{F54E7D12-6FA2-4CF4-9B8A-58AFDCBA5B4E}"
+              DTS:DTSID="{0FD2E831-6535-469E-93D3-B32178D8E33D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -279,7 +278,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_country"
-              DTS:DTSID="{CEFC21A8-BA93-4821-B341-995C5DC74473}"
+              DTS:DTSID="{BD7A0A01-4B0A-43B7-B0C6-404BB2D5FF4B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -288,7 +287,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_region"
-              DTS:DTSID="{85BC562D-2575-4A68-A933-AF5662E21BE7}"
+              DTS:DTSID="{7A957DFD-3643-4918-ADA6-FB337B6A6341}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -297,7 +296,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="market"
-              DTS:DTSID="{519E6789-C7E0-498E-8062-B14D96FB9BD7}"
+              DTS:DTSID="{4918C2BC-9096-4B65-9C07-39BFE2DA3B42}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -306,7 +305,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_profit_per_order"
-              DTS:DTSID="{277E2540-9F13-443A-B7C1-D032D8A87F84}"
+              DTS:DTSID="{57426921-32DF-4B98-ABF5-AAE4FB138E7A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -326,7 +325,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\order_items.csv">
+          DTS:ConnectionString="C:\DataCo\order_items.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -335,7 +334,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_id"
-              DTS:DTSID="{06766211-AE41-4C56-AB8A-D959F6902232}"
+              DTS:DTSID="{FEAF0543-0325-413C-93FA-C0919CAC26DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -344,7 +343,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_id"
-              DTS:DTSID="{5EAD1D0F-D235-4D31-92C8-DF5403BA336D}"
+              DTS:DTSID="{94722A1A-7358-4B62-8604-FF2023C6EAE5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -353,7 +352,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_cardprod_id"
-              DTS:DTSID="{8C472F40-5679-4075-BE04-CEC6E7F031F9}"
+              DTS:DTSID="{7CD1AB09-8DA7-49A8-B321-1D4F17B0678A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -362,7 +361,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_quantity"
-              DTS:DTSID="{17DA86B9-116C-4FB9-92E5-BCCCA4168E8C}"
+              DTS:DTSID="{1621EAA1-AD97-4054-AC68-458E85C6F7B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -371,7 +370,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_product_price"
-              DTS:DTSID="{A7FEE71D-BA63-4EC9-A28B-3F4665E4027E}"
+              DTS:DTSID="{A60516B5-E257-4302-B632-32E5290E0BBA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -380,7 +379,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_discount"
-              DTS:DTSID="{9D47CAD0-0446-40DF-93EF-E996A3FBDA1C}"
+              DTS:DTSID="{C3294150-446A-465A-9F2A-8612BB307007}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -389,7 +388,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_discount_rate"
-              DTS:DTSID="{C3EDBF82-F525-4BF0-9147-61DED523296E}"
+              DTS:DTSID="{91CE9AAC-49E6-4B3F-9FE6-F4952993EAB2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -398,7 +397,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_total"
-              DTS:DTSID="{A9358864-2D89-46C6-9406-BF639338BF02}"
+              DTS:DTSID="{FC1ADBB8-8F4C-4573-9425-9E39A76368D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -407,7 +406,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_item_profit_ratio"
-              DTS:DTSID="{67F3B813-8C2C-45DA-AF1F-0CAC4B73FEB7}"
+              DTS:DTSID="{3D890878-F865-48C5-B23B-92C78F5BECCF}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -427,7 +426,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\product.csv">
+          DTS:ConnectionString="C:\DataCo\product.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -436,7 +435,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="product_card_id"
-              DTS:DTSID="{10A64C65-AE33-4905-A68A-E25354411B22}"
+              DTS:DTSID="{E947FBB0-2DDC-4320-8CD7-07A78852170C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -445,7 +444,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="product_name"
-              DTS:DTSID="{0B4469AB-795A-4C15-A11F-7ACBDF057536}"
+              DTS:DTSID="{9A24D035-F799-4CC5-B7D4-EAD15631C15D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -454,7 +453,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="product_price"
-              DTS:DTSID="{76EC97AC-D9BB-4356-90FD-6D1483666487}"
+              DTS:DTSID="{2FC4EB64-E52D-4B9A-AA6A-8B1AF092E4BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -463,7 +462,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="product_status"
-              DTS:DTSID="{97FF6E20-8FB1-4064-9BCD-FF17E99F728F}"
+              DTS:DTSID="{B061F476-44A1-4534-A90F-3F0176AFA560}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -472,7 +471,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="product_category_id"
-              DTS:DTSID="{B44EF8D0-807F-4A09-A369-EC89333D3904}"
+              DTS:DTSID="{16337112-13A8-4A8C-AD84-DBE785A8871D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -492,7 +491,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\quynn\Downloads\DataCo\shipping.csv">
+          DTS:ConnectionString="C:\DataCo\shipping.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -501,7 +500,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="order_id"
-              DTS:DTSID="{19BD477A-F276-4A2D-9421-F45D6376F111}"
+              DTS:DTSID="{1B8315A6-C895-4EF4-9CDF-14B5EAD87FB0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -510,7 +509,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="shipping_date_dateorders"
-              DTS:DTSID="{8D0637D8-3028-49A3-892C-5C317CEC3684}"
+              DTS:DTSID="{4051365D-D785-44C7-B8FF-0877006E7763}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -519,7 +518,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="shipping_mode"
-              DTS:DTSID="{1459F433-5A3C-40A8-B3AF-EFD5AF89FD76}"
+              DTS:DTSID="{F22BD55A-D741-427D-A8AF-D57A17E0766E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -528,7 +527,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="delivery_status"
-              DTS:DTSID="{99BAD0B8-837A-457F-BBE5-E94C2558FF6A}"
+              DTS:DTSID="{6BDF2FD3-5FA1-4C0D-8231-26CF52EC36F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -537,7 +536,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="late_delivery_risk"
-              DTS:DTSID="{F0FB12D0-4A79-45EF-9B79-6F48516DC479}"
+              DTS:DTSID="{F9839ED0-852E-455C-8971-7FD036FCE33E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -546,7 +545,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="days_for_shipping_real"
-              DTS:DTSID="{823EFD4A-7B4C-4387-88BE-F47A3021B9F5}"
+              DTS:DTSID="{BA02E25D-FCEC-46B1-A1B2-756345DD1D00}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -555,7 +554,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="days_for_shipment_scheduled"
-              DTS:DTSID="{DE49075C-CF72-40FF-88EC-825EA7D068DF}"
+              DTS:DTSID="{9C0BAF3F-9D4E-493F-90DA-3357449C0AC6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -808,7 +807,8 @@
                       name="category_id" />
                     <externalMetadataColumn
                       refId="Package\Load category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[category_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="255"
                       name="category_name" />
                   </externalMetadataColumns>
@@ -896,15 +896,15 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_id]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_id]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_id]"
-                      name="customer_id"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]"
+                      name="Column 0"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -918,15 +918,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_fname]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_fname]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_fname]"
-                      name="customer_fname"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]"
+                      name="Column 1"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -940,15 +940,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_lname]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_lname]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 2]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_lname]"
-                      name="customer_lname"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]"
+                      name="Column 2"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -962,15 +962,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_email]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_email]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 3]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_email]"
-                      name="customer_email"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]"
+                      name="Column 3"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -984,15 +984,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_segment]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_segment]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 4]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_segment]"
-                      name="customer_segment"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]"
+                      name="Column 4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1006,15 +1006,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_city]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_city]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_city]"
-                      name="customer_city"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]"
+                      name="Column 5"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1028,15 +1028,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_state]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_state]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_state]"
-                      name="customer_state"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
+                      name="Column 6"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1050,15 +1050,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_country]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_country]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_country]"
-                      name="customer_country"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]"
+                      name="Column 7"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1072,15 +1072,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_street]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_street]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 8]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_street]"
-                      name="customer_street"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]"
+                      name="Column 8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1094,15 +1094,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_zipcode]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_zipcode]"
+                      externalMetadataColumnId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 9]"
                       length="50"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_zipcode]"
-                      name="customer_zipcode"
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]"
+                      name="Column 9"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1119,65 +1119,65 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_id]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_id" />
+                      name="Column 0" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_fname]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_fname" />
+                      name="Column 1" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_lname]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 2]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_lname" />
+                      name="Column 2" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_email]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 3]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_email" />
+                      name="Column 3" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_segment]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 4]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_segment" />
+                      name="Column 4" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_city]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_city" />
+                      name="Column 5" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_state]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_state" />
+                      name="Column 6" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_country]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_country" />
+                      name="Column 7" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_street]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 8]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_street" />
+                      name="Column 8" />
                     <externalMetadataColumn
-                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_zipcode]"
+                      refId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 9]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="customer_zipcode" />
+                      name="Column 9" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1259,7 +1259,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -1282,85 +1282,85 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_id]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 0]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_id"
+                      cachedName="Column 0"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_id]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_fname]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 1]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_fname"
+                      cachedName="Column 1"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_fname]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_fname]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_lname]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 2]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_lname"
+                      cachedName="Column 2"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_lname]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_lname]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_email]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 3]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_email"
+                      cachedName="Column 3"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_email]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_email]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_segment]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 4]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_segment"
+                      cachedName="Column 4"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_segment]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_segment]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_city]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 5]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_city"
+                      cachedName="Column 5"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_city]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_city]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_state]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 6]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_state"
+                      cachedName="Column 6"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_state]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_state]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_country]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 8]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_country"
+                      cachedName="Column 8"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_country]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_country]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_street]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 7]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_street"
+                      cachedName="Column 7"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_street]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_street]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]" />
                     <inputColumn
-                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_zipcode]"
+                      refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 9]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="customer_zipcode"
+                      cachedName="Column 9"
                       externalMetadataColumnId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_zipcode]"
-                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[customer_zipcode]" />
+                      lineageId="Package\Load customer\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1368,7 +1368,7 @@
                       refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="100"
                       name="customer_id" />
                     <externalMetadataColumn
                       refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_fname]"
@@ -1404,7 +1404,7 @@
                       refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_state]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="100"
                       name="customer_state" />
                     <externalMetadataColumn
                       refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_country]"
@@ -1422,7 +1422,7 @@
                       refId="Package\Load customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_zipcode]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="100"
                       name="customer_zipcode" />
                   </externalMetadataColumns>
                 </input>
@@ -3840,21 +3840,25 @@
           Id="Package\Load category"
           TopLeft="126,67" />
         <NodeLayout
+          Size="148.5,42"
+          Id="Package\Load customer"
+          TopLeft="663.181818181818,65.4545454545455" />
+        <NodeLayout
           Size="159.5,42"
           Id="Package\Load department"
           TopLeft="304,68" />
         <NodeLayout
-          Size="141,42"
-          Id="Package\Load product"
-          TopLeft="498,69" />
+          Size="161,42"
+          Id="Package\Load order_items"
+          TopLeft="397,139" />
         <NodeLayout
           Size="134.5,42"
           Id="Package\Load orders"
           TopLeft="587.727272727273,139.181818181818" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\Load order_items"
-          TopLeft="397,139" />
+          Size="141,42"
+          Id="Package\Load product"
+          TopLeft="498,69" />
         <NodeLayout
           Size="144,42"
           Id="Package\Load shipping"
@@ -3895,6 +3899,62 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="27,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="639,88.2272727272728">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24.181818181818,0"
+              Start="0,0"
+              End="16.681818181818,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="16.681818181818,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="737.431818181818,107.454545454545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82.454545454545,31.7272727272725"
+              Start="0,0"
+              End="-82.454545454545,24.2272727272725">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.8636363636362" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.8636363636362"
+                    Point2="0,15.8636363636362"
+                    Point3="-4,15.8636363636362" />
+                  <mssgle:LineSegment
+                    End="-78.454545454545,15.8636363636362" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-78.454545454545,15.8636363636362"
+                    Point2="-82.454545454545,15.8636363636362"
+                    Point3="-82.454545454545,19.8636363636362" />
+                  <mssgle:LineSegment
+                    End="-82.454545454545,24.2272727272725" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3951,69 +4011,9 @@
           Text="#"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="36,60"
+          Size="36,40"
           Id="12fbc517-b488-4477-bd82-e948a7e57e45"
           TopLeft="421.818181818182,222.727272727273" />
-        <NodeLayout
-          Size="148.5,42"
-          Id="Package\Load customer"
-          TopLeft="663.181818181818,65.4545454545455" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="639,88.2272727272727">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="24.1818181818184,0"
-              Start="0,0"
-              End="16.6818181818184,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="16.6818181818184,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="737.431818181818,107.454545454545">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-82.4545454545457,31.7272727272727"
-              Start="0,0"
-              End="-82.4545454545457,24.2272727272727">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.8636363636364" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.8636363636364"
-                    Point2="0,15.8636363636364"
-                    Point3="-4,15.8636363636364" />
-                  <mssgle:LineSegment
-                    End="-78.4545454545457,15.8636363636364" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-78.4545454545457,15.8636363636364"
-                    Point2="-82.4545454545457,15.8636363636364"
-                    Point3="-82.4545454545457,19.8636363636364" />
-                  <mssgle:LineSegment
-                    End="-82.4545454545457,24.2272727272727" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4023,13 +4023,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load category\Flat File Source"
-          TopLeft="212,148" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load category\OLE DB Destination"
           TopLeft="434,150" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load category\Flat File Source"
+          TopLeft="212,148" />
         <EdgeLayout
           Id="Package\Load category.Paths[Flat File Source Output]"
           TopLeft="363,170">
@@ -4055,19 +4055,82 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load category\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load department">
+    design-time-name="Package\Load customer">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
-          Id="Package\Load department\Flat File Source"
-          TopLeft="348,124" />
+          Id="Package\Load customer\Flat File Source"
+          TopLeft="179,163" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load customer\OLE DB Destination"
+          TopLeft="481,180" />
+        <EdgeLayout
+          Id="Package\Load customer.Paths[Flat File Source Output]"
+          TopLeft="330,184">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="151,17"
+              Start="0,0"
+              End="143.5,17">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="71.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.5,0"
+                    Point2="75.5,0"
+                    Point3="75.5,4" />
+                  <mssgle:LineSegment
+                    End="75.5,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.5,13"
+                    Point2="75.5,17"
+                    Point3="79.5,17" />
+                  <mssgle:LineSegment
+                    End="143.5,17" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Load department">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load department\OLE DB Destination"
           TopLeft="548,122" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load department\Flat File Source"
+          TopLeft="348,124" />
         <EdgeLayout
           Id="Package\Load department.Paths[Flat File Source Output]"
           TopLeft="499,144">
@@ -4087,63 +4150,93 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load department\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load product">
+    design-time-name="Package\Load order_items">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load product\Flat File Source"
-          TopLeft="490,178" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
-          Id="Package\Load product\OLE DB Destination"
-          TopLeft="690,174.666666666667" />
+          Id="Package\Load order_items\OLE DB Destination"
+          TopLeft="664,208" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load order_items\Flat File Source"
+          TopLeft="420,204" />
         <EdgeLayout
-          Id="Package\Load product.Paths[Flat File Source Output]"
-          TopLeft="641,197.333333333333">
+          Id="Package\Load order_items.Paths[Flat File Source Output]"
+          TopLeft="571,227">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="49,0"
+              EndConnector="93,0"
               Start="0,0"
-              End="41.5,0">
+              End="85.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="41.5,0" />
+                    End="85.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load order_items\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load orders">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load orders\Flat File Source"
-          TopLeft="292,186" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load orders\OLE DB Destination"
           TopLeft="518,194" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load orders\Flat File Source"
+          TopLeft="292,186" />
         <EdgeLayout
           Id="Package\Load orders.Paths[Flat File Source Output]"
           TopLeft="443,207">
@@ -4175,39 +4268,54 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load orders\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load order_items">
+    design-time-name="Package\Load product">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load order_items\Flat File Source"
-          TopLeft="420,204" />
-        <NodeLayout
           Size="171,42"
-          Id="Package\Load order_items\OLE DB Destination"
-          TopLeft="664,208" />
+          Id="Package\Load product\OLE DB Destination"
+          TopLeft="690,174.666666666667" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load product\Flat File Source"
+          TopLeft="490,178" />
         <EdgeLayout
-          Id="Package\Load order_items.Paths[Flat File Source Output]"
-          TopLeft="571,227">
+          Id="Package\Load product.Paths[Flat File Source Output]"
+          TopLeft="641,197.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="93,0"
+              EndConnector="49,0"
               Start="0,0"
-              End="85.5,0">
+              End="41.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="85.5,0" />
+                    End="41.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4219,19 +4327,32 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load product\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load shipping">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load shipping\Flat File Source"
-          TopLeft="332,144" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load shipping\OLE DB Destination"
           TopLeft="548,147" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load shipping\Flat File Source"
+          TopLeft="332,144" />
         <EdgeLayout
           Id="Package\Load shipping.Paths[Flat File Source Output]"
           TopLeft="483,166.5">
@@ -4251,77 +4372,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load category\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load department\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load product\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load orders\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load order_items\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load shipping\OLE DB Destination">
     <Properties>
@@ -4335,56 +4393,6 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load customer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load customer\Flat File Source"
-          TopLeft="358,206" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load customer\OLE DB Destination"
-          TopLeft="570,198" />
-        <EdgeLayout
-          Id="Package\Load customer.Paths[Flat File Source Output]"
-          TopLeft="509,227">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="61,-8"
-              Start="0,0"
-              End="53.5,-8">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="26.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26.5,0"
-                    Point2="30.5,0"
-                    Point3="30.5,-4" />
-                  <mssgle:LineSegment
-                    End="30.5,-4" />
-                  <mssgle:CubicBezierSegment
-                    Point1="30.5,-4"
-                    Point2="30.5,-8"
-                    Point3="34.5,-8" />
-                  <mssgle:LineSegment
-                    End="53.5,-8" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load customer\OLE DB Destination">
     <Properties>
