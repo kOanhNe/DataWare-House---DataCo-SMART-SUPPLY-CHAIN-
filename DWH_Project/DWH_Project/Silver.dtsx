@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{531E71D6-A162-4EAA-9C4B-974DD480C083}">
+  DTS:VersionBuild="55"
+  DTS:VersionGUID="{FFEB6FF7-AC92-42FC-BFAC-EE63AD1D27CA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=QUYNHNHI\MSSQL2025;Initial Catalog=DataSupplyChain;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{A4B42324-CB99-494F-9851-70E30627C2B5}QUYNHNHI\MSSQL2025.DataSupplyChain;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=QUYNHNHI\MSSQL2025;Initial Catalog=DataSupplyChain;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{A4B42324-CB99-494F-9851-70E30627C2B5}QUYNHNHI\MSSQL2025.DataSupplyChain;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -4758,6 +4758,56 @@ FROM bronze.category</property>
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{5ED353C0-CB59-4C2C-912C-3D0E767DA7A1}"
+      DTS:From="Package\Load Siver category"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load Silver Department" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1000F853-33FD-4331-8AD7-DB763130D7FA}"
+      DTS:From="Package\Load Silver Department"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load Silver Product" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{627D90B7-5707-490B-93C5-C989FAD367AE}"
+      DTS:From="Package\Load Silver Product"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Load Silver Customer" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{283EE69A-34CD-4567-A90D-A0D229A40E12}"
+      DTS:From="Package\Load Silver Customer"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Load Silver Orders" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{30B7D1A7-1703-4AD8-A9EA-E037C6B13141}"
+      DTS:From="Package\Load Silver Orders"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Load Silver Order Items" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{22BBC15F-8D90-401B-98B0-B43F946B63D4}"
+      DTS:From="Package\Load Silver Order Items"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Load Silver Shipping" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -4769,35 +4819,179 @@ FROM bronze.category</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="178.5,42"
           Id="Package\Load Silver Customer"
-          TopLeft="317,68" />
+          TopLeft="670,59" />
         <NodeLayout
           Size="189.5,42"
           Id="Package\Load Silver Department"
-          TopLeft="559,75" />
+          TopLeft="229,58" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Load Silver Order Items"
+          TopLeft="314,148" />
+        <NodeLayout
+          Size="165.5,42"
+          Id="Package\Load Silver Orders"
+          TopLeft="552.5,145.5" />
+        <NodeLayout
+          Size="169.5,42"
+          Id="Package\Load Silver Product"
+          TopLeft="452,59" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Load Silver Shipping"
+          TopLeft="101.5,140.5" />
         <NodeLayout
           Size="172,42"
           Id="Package\Load Siver category"
           TopLeft="21.5,58.5" />
-        <NodeLayout
-          Size="169.5,42"
-          Id="Package\Load Silver Product"
-          TopLeft="129,158" />
-        <NodeLayout
-          Size="191,42"
-          Id="Package\Load Silver Order Items"
-          TopLeft="446,219" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Load Silver Shipping"
-          TopLeft="14.5,104.5" />
-        <NodeLayout
-          Size="165.5,42"
-          Id="Package\Load Silver Orders"
-          TopLeft="188.5,213.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="193.5,79.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35.5,0"
+              Start="0,0"
+              End="28,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="28,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="418.5,79.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="33.5,0"
+              Start="0,0"
+              End="26,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="26,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="621.5,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.5,0"
+              Start="0,0"
+              End="41,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="41,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="759.25,101">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-124,44.5"
+              Start="0,0"
+              End="-124,37">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.25"
+                    Point2="0,22.25"
+                    Point3="-4,22.25" />
+                  <mssgle:LineSegment
+                    End="-120,22.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-120,22.25"
+                    Point2="-124,22.25"
+                    Point3="-124,26.25" />
+                  <mssgle:LineSegment
+                    End="-124,37" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="552.5,167.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-47.5,0"
+              Start="0,0"
+              End="-40,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-40,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="314,165.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.5,0"
+              Start="0,0"
+              End="-31,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-31,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5030,202 +5224,6 @@ FROM bronze.category</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load Siver category">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Load Siver category\Sort"
-          TopLeft="415.25,238.5" />
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Load Siver category\OLE DB Source"
-          TopLeft="384,139" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load Siver category\OLE DB Destination"
-          TopLeft="385,334.375" />
-        <EdgeLayout
-          Id="Package\Load Siver category.Paths[Sort Output]"
-          TopLeft="467.375,280.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.875"
-              Start="0,0"
-              End="0,46.375">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.375" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Siver category.Paths[OLE DB Source Output]"
-          TopLeft="461.625,181">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57.5"
-              Start="0,0"
-              End="0,50">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Siver category\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Siver category\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load Silver Product">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Load Silver Product\OLE DB Source"
-          TopLeft="602,62" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Load Silver Product\Sort"
-          TopLeft="626,148" />
-        <EdgeLayout
-          Id="Package\Load Silver Product.Paths[OLE DB Source Output]"
-          TopLeft="676,104">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44"
-              Start="0,0"
-              End="0,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load Silver Product\OLE DB Destination"
-          TopLeft="580,222" />
-        <EdgeLayout
-          Id="Package\Load Silver Product.Paths[Sort Output]"
-          TopLeft="675,190">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9.5,32"
-              Start="0,0"
-              End="-9.5,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12"
-                    Point2="0,16"
-                    Point3="-4,16" />
-                  <mssgle:LineSegment
-                    End="-5.5,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.5,16"
-                    Point2="-9.5,16"
-                    Point3="-9.5,20" />
-                  <mssgle:LineSegment
-                    End="-9.5,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Silver Product\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Silver Product\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\Load Silver Order Items">
     <LayoutInfo>
       <GraphLayout
@@ -5316,6 +5314,210 @@ FROM bronze.category</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Silver Order Items\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Silver Orders">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load Silver Orders\OLE DB Destination"
+          TopLeft="746,408" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load Silver Orders\OLE DB Source"
+          TopLeft="766,192" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Load Silver Orders\Sort"
+          TopLeft="784,290" />
+        <EdgeLayout
+          Id="Package\Load Silver Orders.Paths[OLE DB Source Output]"
+          TopLeft="841,234">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8,56"
+              Start="0,0"
+              End="-8,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24"
+                    Point2="0,28"
+                    Point3="-4,28" />
+                  <mssgle:LineSegment
+                    End="-4,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4,28"
+                    Point2="-8,28"
+                    Point3="-8,32" />
+                  <mssgle:LineSegment
+                    End="-8,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Silver Orders.Paths[Sort Output]"
+          TopLeft="832.25,332">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,76"
+              Start="0,0"
+              End="0,68.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Silver Orders\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Silver Orders\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Silver Product">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load Silver Product\OLE DB Source"
+          TopLeft="602,62" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Load Silver Product\Sort"
+          TopLeft="626,148" />
+        <EdgeLayout
+          Id="Package\Load Silver Product.Paths[OLE DB Source Output]"
+          TopLeft="676,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load Silver Product\OLE DB Destination"
+          TopLeft="580,222" />
+        <EdgeLayout
+          Id="Package\Load Silver Product.Paths[Sort Output]"
+          TopLeft="675,190">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.5,32"
+              Start="0,0"
+              End="-9.5,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12"
+                    Point2="0,16"
+                    Point3="-4,16" />
+                  <mssgle:LineSegment
+                    End="-5.5,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.5,16"
+                    Point2="-9.5,16"
+                    Point3="-9.5,20" />
+                  <mssgle:LineSegment
+                    End="-9.5,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Silver Product\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Silver Product\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5430,83 +5632,75 @@ FROM bronze.category</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load Silver Orders">
+    design-time-name="Package\Load Siver category">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load Silver Orders\OLE DB Destination"
-          TopLeft="746,408" />
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Load Silver Orders\OLE DB Source"
-          TopLeft="766,192" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="98,42"
-          Id="Package\Load Silver Orders\Sort"
-          TopLeft="784,290" />
+          Id="Package\Load Siver category\Sort"
+          TopLeft="415.25,238.5" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load Siver category\OLE DB Source"
+          TopLeft="384,139" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load Siver category\OLE DB Destination"
+          TopLeft="385,334.375" />
         <EdgeLayout
-          Id="Package\Load Silver Orders.Paths[OLE DB Source Output]"
-          TopLeft="841,234">
+          Id="Package\Load Siver category.Paths[Sort Output]"
+          TopLeft="467.375,280.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8,56"
+              EndConnector="0,53.875"
               Start="0,0"
-              End="-8,48.5">
+              End="0,46.375">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24"
-                    Point2="0,28"
-                    Point3="-4,28" />
-                  <mssgle:LineSegment
-                    End="-4,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4,28"
-                    Point2="-8,28"
-                    Point3="-8,32" />
-                  <mssgle:LineSegment
-                    End="-8,48.5" />
+                    End="0,46.375" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Silver Orders.Paths[Sort Output]"
-          TopLeft="832.25,332">
+          Id="Package\Load Siver category.Paths[OLE DB Source Output]"
+          TopLeft="461.625,181">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,76"
+              EndConnector="0,57.5"
               Start="0,0"
-              End="0,68.5">
+              End="0,50">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,68.5" />
+                    End="0,50" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Silver Orders\OLE DB Destination">
+    design-time-name="Package\Load Siver category\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5519,7 +5713,7 @@ FROM bronze.category</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Silver Orders\OLE DB Source">
+    design-time-name="Package\Load Siver category\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
