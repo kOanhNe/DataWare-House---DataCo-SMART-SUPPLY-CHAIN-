@@ -9,8 +9,8 @@ CSV → **Bronze Layer** → Silver Layer → Gold Layer → SSAS → BI/Reporti
 DataWarehouseProject/
 ├── DWH_Project/
 │   ├── Bronze.dtsx          # Member 1 
-│   ├── Silver.dtsx          # Member 2 sẽ chỉnh sửa
-│   ├── Gold.dtsx            # Member 3 sẽ chỉnh sửa
+│   ├── Silver.dtsx          # Member 2 
+│   ├── Gold.dtsx            # Member 3 
 │   └── Main.dtsx            # Master Package (chạy toàn bộ pipeline)
 ├── README.md
 ```
@@ -19,7 +19,6 @@ DataWarehouseProject/
 - Kết nối SQL Server instance `QUYNHNHI\MSSQL2025` bằng Windows Authentication
 - Tạo database `DataSupplyChain`
 - Bật SQL Server and Windows Authentication mode
-- Tạo Login và User cho Member 2, 3, 4 (với password `DWH2025`)
 
 **Chạy toàn bộ pipeline:**
 - Mở `Main.dtsx` → Nhấn Start (sẽ chạy Bronze → Silver → Gold theo thứ tự)
