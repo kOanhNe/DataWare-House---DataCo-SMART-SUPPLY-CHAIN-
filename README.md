@@ -28,7 +28,5 @@ DataWarehouseProject/
 
 ## Lưu ý quan trọng
 - Luôn **TRUNCATE** bảng trước khi chạy lại package để tránh dữ liệu bị trùng.
-- Các Member sau vui lòng **không sửa** package `Bronze.dtsx` trừ khi có thông báo từ Member 1.
-- Nếu gặp vấn đề về kết nối từ xa, kiểm tra ZeroTier VPN và Port 1433.
 
 ```
